@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.container {
+    background-image: url(../img/central-processor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.feedbackform {
+    width: 400px;
+    padding: 40px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    align-self: center;
+}
+
+.feedbackform  form{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedbackform h2{
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    color: #fff;
+}
+
+.feedbackform__input-mark {
+    font-size: 18px;
+    color: #fff;
+}
+
+.feedbackform__input-feild {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.feedbackform__message-box {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.feedbackform__button {
+    margin-top: 10px;
+    padding: 10px 0px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(0, 99, 197);;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.4s ease-in;
+}
+
+.feedbackform__button:hover {
+    background-color: rgb(48, 148, 247);
+}
+
+.feedbackform__button:active {
+    background-color: rgb(2, 88, 175) ;
+}
+
+
+.feedbackform__button:focus {
+    outline: none;
+}
+
+
+/*Styles for modal window*/
+
+.modal {
+    position: fixed;
+    color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+    width: 500px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    position: absolute;
+    left: 33%;
+    top: 40%;
+}
+
+.modal-window__icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.4s ease-in;
+}
+
+.modal-window__icon:hover {
+    color: rgb(211, 0, 0);
+}
+
+.modal-window__message-success { 
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.hide--modal {
+    display: none;
+}
+
+/*Нотификаця для ошибки*/
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert--danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

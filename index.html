@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FeedBackForm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+    <div id="modal" class="modal hide--modal">
+        <div class="modal-window">
+            <span id="modal-close" class="modal-window__icon">
+                закрыть
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+            <p id="modal-message" class="modal-window__message-success"><span class="modal-window__check-icon"><i class="fa fa-check" aria-hidden="true"></i></span></span></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="feedbackform">
+            <h2>Форма обратной связи</h2>
+            <form name="formSend">
+                <div id="name-block">
+                    <label class="feedbackform__input-mark" for="nameField">Имя:</label>
+                    <input class="feedbackform__input-feild" id="nameField" type="text" name="username" placeholder="Введите имя">
+                </div>
+                <div id="email-block">
+                    <label class="feedbackform__input-mark" for="emailField">Email:</label>
+                    <input class="feedbackform__input-feild" id="emailField" type="email" name="email" placeholder="Введите email">
+                </div>
+                <div id="message-block">
+                    <label class="feedbackform__input-mark" for="messagefield">Сообщение:</label>
+                    <textarea class="feedbackform__message-box" name="message" id="messagefield" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+                </div>
+                <input class="feedbackform__button" name="formSubmit" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
