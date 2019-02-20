@@ -18,6 +18,9 @@ cd feedbackform
 Запускаем файл index.html
 ```
 
+Ссылка на demo:
+[feedbackform demo](https://ivanplastun.github.io/feedbackform/ "demo")
+
 ### Tech
 Технологии:
 * HTML, CSS
